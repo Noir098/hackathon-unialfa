@@ -1,0 +1,24 @@
+CADASTRO DE USUARIOS - Next.js 15 + TypeScript + CSS puro + JSON Server
+
+COMO RODAR (2 terminais abertos na pasta do projeto)
+1. npm install                (so na primeira vez)
+2. Terminal 1:  npm run api   -> API em http://localhost:3001
+3. Terminal 2:  npm run dev   -> site em http://localhost:3000
+4. Login: aluno@unialfa.com / 123456
+
+TELAS
+/usuarios                 listagem (busca, editar, excluir com confirmacao)
+/usuarios/novo            formulario de cadastro
+/usuarios/[id]/editar     edicao
+
+ARQUIVOS NOVOS (se for copiar para o projeto existente)
+db.json, global.d.ts
+lib/api.ts, lib/mascaras.ts, lib/validacoes.ts
+components/UsuarioForm.tsx  (e components/Icons.tsx atualizado)
+app/(painel)/usuarios/...   (3 paginas)
+app/(painel)/layout.tsx     (menu "Usuarios" adicionado)
+app/globals.css             (CSS completo, visual novo)
+app/(painel)/dashboard/page.tsx (hero + usuarios recentes)
+app/page.tsx                (login)
+lib/util.ts                 (avatar, idade, forca da senha)
+package.json                (json-server + script "api")
